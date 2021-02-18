@@ -1,0 +1,276 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .5s;
+    margin-right: 30px;
+}
+
+a:hover{
+    background-color: rgb(189, 123, 0);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+.dimension{
+    margin-top: 8%;
+    width: 1100px;
+    height: 35em;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cadre{
+    border: solid white;
+    width: 98%;
+    height: 97%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.cadre:hover{
+    border: solid 3px grey;
+}
+.lock{
+    color: grey;
+    font-size: 100px;
+    transition: all linear 0.5s;
+    z-index: 5;
+}
+
+.lock:hover{
+    color: white;
+    opacity: 0;
+}
+
+.lock.open {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.unlock.open {
+    transform: translateX(-10px);
+    color: white;
+    opacity: 1;
+}
+
+.unlock{
+    transition: all 1s;
+    color: grey;
+    font-size: 100px;
+    opacity: 0;
+}
+
+.verouillé{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_home{
+    display: none;  
+    align-items: center;
+    width: 70%;
+    height: 90%;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+/********************************container_home*****************************/
+.menu{
+    color: rgb(141, 141, 141);
+    font-size: 130px;
+    margin: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.settings{
+    transition: all .3s;
+}
+
+.home{
+    transition: all .3s;
+}
+
+.gps{
+    transition: all .3s;
+}
+
+.contact{
+    transition: all .3s;
+}
+
+.bluetooth{
+    transition: all .3s;
+}
+.radio{
+    transition: all .3s;
+}
+.musique{
+    transition: all .3s;
+}
+.meteo{
+    transition: all .3s;
+}
+.vocal{
+    transition: all .3s;
+}
+
+.settings_home{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+/***********************************Hover container_home********************************************************/
+.settings:hover{
+    color : white;
+    cursor: pointer;
+    
+}
+.home:hover{
+    color : white;
+    cursor: pointer;
+    
+}
+.gps:hover{
+    color : white;
+    cursor: pointer;
+    
+}
+.contact:hover{
+    color : white;
+    cursor: pointer;
+    
+}
+
+.bluetooth:hover{
+    color : white;
+    cursor: pointer;
+    
+}
+
+.radio:hover{
+    color : white;
+    cursor: pointer;
+    
+}
+
+.musique:hover{
+    color : white;
+    cursor: pointer;
+    
+}
+
+.meteo:hover{
+    color : white;
+    cursor: pointer;
+    
+}
+
+.vocal:hover{
+    color : white;
+    cursor: pointer;
+    
+}
+
+
+/******************Container_menu***************************/
+.container_menu{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    width: 0px;
+    height: 100%;
+    margin-right: 50px;
+    transform: translateX(-500px);
+    transition: all 1s;
+}
+
+
+.container_menu.open{
+    transform: translateX(0);
+}
+
+
+.container_menu_logo{
+    font-size: 40px;
+    color: rgb(212, 212, 212);
+    height: 50px;
+    width: 50px;
+    display: none;
+    margin-top: 15px;
+    transition: all .4s;
+}
+
+
+/**********************page settings********************************/
+.containerSettings{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: none;
+}
+/***************************Hover container_menu*************************************/
+.menu_home:hover{
+    color: white;
+}
+
+.menu_radio:hover{
+    color: white;
+}
+
+.menu_bluetooth:hover{
+    color: white;
+}
+
+.menu_contact:hover{
+    color: white;
+}
+
+.menu_gps:hover{
+    color: white;
+}
+
+.menu_musique:hover{
+    color: white;
+}
+
+.menu_vocal:hover{
+    color: white;
+}
+
+.menu_meteo:hover{
+    color: white;
+}
+
+.menu_settings:hover{
+    color: white;
+}
